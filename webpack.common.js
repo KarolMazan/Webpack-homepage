@@ -88,5 +88,47 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/homepage.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "homepage.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona1.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona1.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona2.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona2.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona3.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona3.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona4.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona4.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/podstrona5.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "podstrona5.html",
+    }),
   ],
 };
