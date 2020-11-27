@@ -1,13 +1,105 @@
-@import "~normalize.css";
-
-@import "_variables";
-@import "modules/hello.scss";
-
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+}
+
+.generals {
+    color: rgb(0, 0, 0);
+    &__header {
+        color: #004fff;
+        &__header::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: tomato;
+            border-radius: 50%;
+            &__header::after {
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-color: tomato;
+                border-radius: 50%;
+                &__paragraph {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+.title {
+    color: #131515;
+    font-size: 44px;
+}
+
+.career {
+    color: #004fff;
+    &__paragraph {
+        margin: 10px;
+        &__achievements {
+            color: #004fff;
+            &__achievements--paragraph {
+                padding: 14px;
+                border: 3px solid yellow;
+                color: #131515;
+                &__records {
+                    color: #004fff;
+                    &__records--paragraph {
+                        color: #131515;
+                        &__stats {
+                            color: #004fff;
+                            &__stats--paragraph {
+                                color: #131515;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    &__item {
+        text-decoration: none;
+        padding: 0 16px;
+        &__link:hover {
+            color: violet;
+            &__link:visited {
+                color: tomato;
+                &__link:focus {
+                    border: 2px solid yellow;
+                    &__list {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media print {
+    body {
+        background: yellow;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
